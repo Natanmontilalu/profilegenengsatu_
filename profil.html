@@ -1,26 +1,263 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Profil Dusun Geneng 1</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Dusun Geneng 1</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Google: Montserrat (Bold) & Nunito (Regular) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Ikon (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animasi Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Profil Dusun Geneng 1</h1>
-    <nav>
-      <a href="dashboard.html">← Kembali ke Dashboard</a>
-    </nav>
-  </header>
+    <!-- Header/Navbar -->
+    <header>
+     <div class="header-container">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="image/logo_kab_mgl.png" alt="Logo Dusun Geneng 1">
+                <div class="logo-text">
+                    <h1>DUSUN GENENG 1</h1>
+                    <p class="alamat-dusun">Desa Sidomulyo Kecamatan Candimulyo</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html" class="active">Profil</a></li>
+                <li><a href="umkm.html">UMKM</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="budaya.html">Budaya</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-  <main>
-    <section>
-      <p>Geneng I adalah salah satu dusun yang terletak di Desa Sidomulyo, Kecamatan Candimulyo, Kabupaten Magelang, Provinsi Jawa Tengah. Wilayah ini berada di dataran tinggi yang subur dan dikelilingi oleh pegunungan seperti Merapi, Merbabu, Sumbing, dan Pegunungan Menoreh. Wilayah ini berada di dataran tinggi dengan suhu udara rata-rata berkisar antara 20°C hingga 27°C, menjadikannya sejuk dan nyaman untuk aktivitas pertanian. </p>
+    <!-- Judul Halaman -->
+    <section class="page-header">
+        <h1>Profil Dusun Geneng 1</h1>
+        <div class="divider"></div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Dusun Geneng 1</p>
-  </footer>
+    <!-- Konten Profil -->
+    <main class="profile-container">
+        <!-- Sejarah -->
+        <section class="profile-section">
+            <div class="section-title">
+                <i class="fas fa-history"></i>
+                <h2>Sejarah Dusun</h2>
+                    <div class="section-divider"></div>
+            </div>
+            <div class="history-content">
+                <div class="history-text">
+                    <p>Dusun Geneng 1 memiliki akar sejarah yang kuat dari para leluhur yang pertama kali membuka dan menetap di wilayah ini. 
+                    Tokoh sentral dalam cikal bakal berdirinya dusun ini adalah Mbah Kyai Geneng dan Nyai, serta Mbah Kyai Gentho dan Nyai, 
+                    yang dikenal sebagai sesepuh dan pelopor kehidupan masyarakat di Geneng. Melalui perjuangan dan kebijaksanaan mereka, 
+                    dusun ini tumbuh menjadi sebuah komunitas yang rukun dan berkembang. Nilai-nilai luhur yang diwariskan para pendiri 
+                    masih dijaga dan dilestarikan oleh warga hingga kini, menjadikan Dusun Geneng 1 sebagai salah satu dusun yang memiliki 
+                    kekayaan sejarah dan budaya di wilayahnya.</p>
+                </div>
+                <div class="history-image">
+                    <img src="image/sejarahdusun.png" alt="Foto sejarah dusun">
+                </div>
+            </div>
+        </section>
+
+        <!-- Geografis -->
+        <section class="profile-section">
+            <div class="section-title center">
+                <i class="fas fa-map-marked-alt"></i>
+                <h2>Kondisi Geografis</h2>
+                    <div class="section-divider"></div>
+            </div>
+            <div class="geography-content">
+                <p class="center-text">Dusun Geneng I, yang terletak di Desa Sidomulyo, Kecamatan Candimulyo, Kabupaten Magelang, Jawa Tengah, 
+                    memiliki iklim tropis basah dengan dua musim utama: musim hujan dan musim kemarau. Wilayah ini berada di dataran tinggi 
+                    dengan suhu udara rata-rata berkisar antara 20°C hingga 27°C, menjadikannya sejuk dan nyaman untuk aktivitas pertanian. 
+                    Curah hujan tahunan di Kabupaten Magelang mencapai sekitar 2.589 mm dengan rata-rata 121 hari hujan per tahun, mencerminkan 
+                    tingkat kelembapan yang tinggi sekitar 82%. Kondisi iklim ini sangat mendukung pertumbuhan tanaman pertanian dan perkebunan, 
+                    serta menjadikan Geneng I sebagai wilayah dengan potensi alam yang tinggi di Kabupaten Magelang.</p>
+                <div class="geo-grid">
+                    <div class="geo-data">
+                        <h3>Data Geografis</h3>
+                        <ul>
+                            <li><strong>Luas Wilayah:</strong> 270 Ha</li>
+                            <li><strong>Ketinggian:</strong> 120 mdpl</li>
+                        </ul>
+                    </div>
+                    <div class="geo-map">
+                        <h3>Batas Wilayah</h3>
+                        <div class="map-wrapper">
+                            <div class="map-direction north">
+                                <span>Utara</span>
+                                <p>Jogowisan</p>
+                            </div>
+                            <div class="map-direction east">
+                                <span>Timur</span>
+                                <p>Surojoyo</p>
+                            </div>
+                            <div class="map-direction south">
+                                <span>Selatan</span>
+                                <p>Tempak</p>
+                            </div>
+                            <div class="map-direction west">
+                                <span>Barat</span>
+                                <p>Mejing</p>
+                            </div>
+                            <div class="map-center">
+                                <span>Dusun Geneng 1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demografi -->
+        <section class="profile-section">
+            <div class="section-title">
+                <i class="fas fa-users"></i>
+                <h2>Demografi</h2>
+                    <div class="section-divider"></div>
+            </div>
+            <div class="demography-content">
+                <div class="demography-grid">
+                    <div class="demography-card">
+                        <div class="demography-number">400</div>
+                        <div class="demography-label">Jiwa</div>
+                        <p>Total Penduduk</p>
+                    </div>
+                    <div class="demography-card">
+                        <div class="demography-number">170</div>
+                        <div class="demography-label">KK</div>
+                        <p>Kartu Keluarga</p>
+                    </div>
+                    <div class="demography-card">
+                        <div class="demography-number">200</div>
+                        <div class="demography-label">Laki-Laki</div>
+                        <p>Gender</p>
+                    </div>
+                    <div class="demography-card">
+                        <div class="demography-number">200</div>
+                        <div class="demography-label">Perempuan</div>
+                        <p>Gender</p>
+                    </div>
+                </div>
+                
+                <div class="demography-text">
+                    <p>Dusun Geneng 1, yang terletak di Desa Sidomulyo, Kecamatan Candimulyo, Kabupaten Magelang, merupakan wilayah pedesaan yang masih mempertahankan sektor pertanian sebagai mata pencaharian utama warganya.</p>
+                    <p>Selain pertanian konvensional, Desa Sidomulyo juga dikenal sebagai "Kampung Anggrek" karena banyak warganya yang membudidayakan tanaman anggrek, seperti jenis bulan dan dendrobium. 
+                    Usaha budidaya anggrek ini tidak hanya meningkatkan perekonomian warga tetapi juga memperkenalkan potensi desa ke pasar internasional, dengan proyeksi ekspor ke Jepang dan Singapura.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Struktur Pemerintahan -->
+        <section class="profile-section">
+            <div class="section-title">
+                <i class="fas fa-sitemap"></i>
+                <h2>Struktur Pemerintahan</h2>
+                    <div class="section-divider"></div>
+            </div>
+            <div class="government-content">
+                <div class="government-structure">
+                    <div class="leader-card">
+                        <div class="leader-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Kepala Dusun</h3>
+                        <p>Bapak Aji Candra Saputra</p>
+                    </div>
+                    
+                    <div class="rt-grid">
+                        <div class="rt-card">
+                            <div class="rt-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h4>RT 09</h4>
+                            <p>Bapak Chamdi</p>
+                        </div>
+                        <div class="rt-card">
+                            <div class="rt-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h4>RT 10</h4>
+                            <p>Mbah Marnorejo</p>
+                        </div>
+                        <div class="rt-card">
+                            <div class="rt-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h4>RT 11</h4>
+                            <p>Bapak Daroni</p>
+                        </div>
+                        <div class="rt-card">
+                            <div class="rt-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h4>RT 12</h4>
+                            <p>Bapak Riyadi</p>
+                        </div>
+                        <div class="rt-card">
+                            <div class="rt-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h4>RT 13</h4>
+                            <p>Bapak Hadi Purwanto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Kontak Kami</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Dusun Geneng 1, Desa Candimulyo, Kecamatan Sidomulyo, Kabupaten Magelang, Jawa Tengah</p>
+                <p><i class="fas fa-phone"></i>+62 821 1182 2883 (Kepala Dusun)</p>
+            </div>
+            <div class="footer-section">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Sosial Media</h4>
+                <a href="#"><i class="fab fa-tiktok"></i>Tiktok</a>
+                <a href="#"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Dusun Geneng 1 - KKN AA.83.031</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Script Animasi Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

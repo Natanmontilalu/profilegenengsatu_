@@ -3,40 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dusun Geneng 1</title>
+    <title>Dusun Geneng 1 - Beranda</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Google: Montserrat (Bold) & Nunito (Regular) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Ikon (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header/Navbar -->
     <header>
-        <div class="logo">
-            <h1>Dusun Geneng 1</h1>
+    <div class="header-container">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="image/logo_kab_mgl.png" alt="Logo Dusun Geneng 1">
+                <div class="logo-text">
+                    <h1>DUSUN GENENG 1</h1>
+                    <p class="alamat-dusun">Desa Sidomulyo Kecamatan Candimulyo</p>
+                </div>
+            </div>
         </div>
-        <nav>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <nav id="nav-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profil.html">Profil Dusun</a></li>
-                <li><a href="potensidusun.html">Potensi Dusun</a></li>
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
                 <li><a href="umkm.html">UMKM</a></li>
                 <li><a href="galeri.html">Galeri</a></li>
                 <li><a href="budaya.html">Budaya</a></li>
-                <li><a href="peta.html">Peta Dusun</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Selamat Datang di Dusun Geneng 1</h2>
-            <p>Dusun yang kaya akan potensi, budaya, dan alam yang mempesona dengan masyarakat yang ramah dan bersahabat</p>
-            <a href="dashboard.html" class="btn">Jelajahi Selengkapnya</a>
+   <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Selamat Datang di Dusun Geneng 1</h1>
+        <p class="tagline">Membangun Kebersamaan, Menjaga Tradisi</p>
+        <a href="profil.html" class="btn-explore">Jelajahi Dusun Kami</a>
+    </div>
+</section>
+
+<!-- Konten Utama -->
+<main class="main-content">
+    <!-- Section Peta -->
+    <section class="map-section">
+        <div class="section-header">
+            <i class="fas fa-map-marked-alt"></i>
+            <h2>Peta Dusun Geneng 1</h2>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6144.000708635652!2d110.25082741346374!3d-7.498234451388818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a88c6d9d47359%3A0x35aa2272a6ddf1c9!2sGeneng%20I%2C%20Sidomulyo%2C%20Kec.%20Candimulyo%2C%20Kabupaten%20Magelang%2C%20Jawa%20Tengah!5e1!3m2!1sid!2sid!4v1753722566405!5m2!1sid!2sid" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </section>
 
+    <!-- Tentang Dusun -->
+    <section class="about-section">
+        <h2>Tentang Dusun Geneng 1</h2>
+        <p class="about-text">Geneng I adalah salah satu dusun yang terletak di Desa Sidomulyo, Kecamatan Candimulyo, Kabupaten Magelang, Provinsi Jawa Tengah. Dusun ini memiliki kekayaan budaya dan potensi alam yang menjadi kebanggaan masyarakat setempat.</p>
+    </section>
+
+    <!-- Highlight Fitur -->
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-landmark"></i>
+            </div>
+            <h3>Profil Dusun</h3>
+            <p>Pelajari struktur pemerintahan dan sejarah dusun kami</p>
+            <a href="profil.html" class="feature-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-images"></i>
+            </div>
+            <h3>Galeri Kegiatan</h3>
+            <p>Lihat dokumentasi kegiatan warga dan acara adat</p>
+            <a href="galeri.html" class="feature-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-store"></i>
+            </div>
+            <h3>UMKM Lokal</h3>
+            <p>Temukan produk unggulan warga Dusun Geneng 1</p>
+            <a href="umkm.html" class="feature-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+</main>
+
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Dusun Geneng 1</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Kontak Kami</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Dusun Geneng 1, Desa Candimulyo, Kecamatan Sidomulyo, Kabupaten Magelang, Jawa Tengah</p>
+                <p><i class="fas fa-phone"></i>+62 821 1182 2883 (Kepala Dusun)</p>
+            </div>
+            <div class="footer-section">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Sosial Media</h4>
+                <a href="#"><i class="fab fa-tiktok"></i>Tiktok</a>
+                <a href="#"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Dusun Geneng 1 - KKN AA.83.031</p>
+            <p>All Rights Reserved</p>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
